@@ -51,7 +51,7 @@ h2 {
 }
 
 .section-text button {
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: #ff7171;
   padding: 16px 80px;
   border: none;
@@ -64,7 +64,6 @@ h2 {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-family: Arial, sans-serif;
   padding: 100px;
 }
@@ -73,48 +72,14 @@ h2 {
   width: 50%;
   display: grid;
   grid-gap: 10px;
+  grid-area: span;
   grid-template-columns: 1fr 1fr;
 }
 
 .images-section img {
   width: 100%;
-  height: 50%;
+  height: 70%;
   object-fit: cover;
-}
-
-.text-section {
-  padding: 10px;
-  width: 400px;
-  background-color: #ff7171;
-  margin: 10px;
-}
-.text-section p {
-  text-transform: uppercase;
-}
-.text-section h1 {
-  color: black;
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 48px;
-}
-
-.click {
-  margin-top: 15px;
-  display: flex;
-  gap: 5px;
-}
-
-.click button {
-  background-color: transparent;
-  color: black;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.click img {
-  width: 30px;
 }
 
 .pic1 {
@@ -130,6 +95,41 @@ h2 {
 .pic3 {
   grid-column: 1;
   grid-row: 2;
+  margin-top: -130px;
+}
+
+.text-section {
+  padding: 10px;
+  width: 400px;
+  height: 50%;
+  background-color: #ff7171;
+  margin-top: 70px;
+}
+.text-section p {
+  text-transform: uppercase;
+}
+.text-section h1 {
+  color: black;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.click {
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+}
+.click img {
+  width: 30px;
+}
+.click button {
+  background-color: transparent;
+  color: black;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {

@@ -71,7 +71,7 @@ h2 {
 .images-section {
   width: 50%;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-area: span;
   grid-template-columns: 1fr 1fr;
 }
@@ -134,19 +134,25 @@ h2 {
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    padding: 0 20px;
+    display: block;
+    text-align: center;
+    padding: 15px;
   }
-
   .navbar a {
-    padding: 12px 5px;
-    font-size: 14px;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
   }
 
   .navbar img {
-    padding: 5px;
+    padding-right: 0;
+    margin-top: 0;
   }
 
   .section {
+    flex-direction: column;
+    align-items: center;
     height: auto;
   }
 
@@ -155,31 +161,27 @@ h2 {
     height: auto;
   }
 
-  h2 {
-    font-size: 32px;
-    letter-spacing: 4px;
-  }
-
   .section-text {
     width: 80%;
     padding: 20px;
   }
 
   .section-text button {
-    margin-top: 20px;
     padding: 12px 40px;
   }
 
   .section2 {
+    flex-direction: column;
     height: auto;
     padding: 20px;
   }
 
   .images-section {
-    width: 80%;
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 
   .images-section img {

@@ -33,7 +33,7 @@ body {
 
 .section img {
   width: 50%;
-  height: 100%;
+  height: calc(100vh - 50px);
   object-fit: cover;
 }
 
